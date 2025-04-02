@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
 /*Mis navbar*/
 
-
 html {
     background-color: black;
 }
@@ -32,6 +31,7 @@ li a {
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
+    font-size: 20px;
 }
 
 li a:hover {
@@ -88,4 +88,10 @@ align-items: center;
 
 .myButton:hover{
     background-color: #791313;
+}
+
+.mybeer {
+
+ height: 50px;
+ width: 50px;
 }
