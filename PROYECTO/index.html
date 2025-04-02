@@ -1,1 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20,400,0,0&icon_names=bug_report" /></head>
+
+<ul>
+<li> <a href="index.html"><span class="material-symbols-outlined">
+    bug_report
+    </span></a></li>
+  <li ><a class="a" href="nosotros.html">NOSOTROS</a></li>
+  <li><a class="a" href="borrachos.html">BORRACHOS.NET</a></li>
+</ul>
+
+<h1>LOS MÁS BUSCADOS DE LA UPQROO</h1>
+<body>
+
+    <div class="contenedor">
+     
+        <div class="carrusel">
+            <div class="tarjetas-div">
+                <div class="tarjeta">
+                    <img src="assets/danna.png" alt="Imagen 1">
+                    <p class="nombre">DANNA PAOLA BARBOSA PECH</p>
+                    <p>Profuga por tener un clon y dice ser la original</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="assets/misa.png" alt="Imagen 2">
+                    <p class="nombre">MISAEL ADAIR GALLEGOS PINEDA</p>
+                    <p>Adicto al fulvo y mete autogol</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="assets/lau.png" alt="Imagen 3">
+                    <p class="nombre">LAUREANO PEREZ ACUÑA</p>
+                    <p>Se le acusa de evasión de impuestos y derrochar dinero a lo pendejo</p>
+                </div>
+                <div class="tarjeta">
+                    <img src="assets/angel.png" alt="Imagen 4">
+                    <p class="nombre">ANGEL TONAUTIUH TAH OCH</p>
+                    <p>Su único defecto es irle al AMÉRICA</p>
+                </div>
+            </div>
+            <button class="prev" onclick="moverTarjeta(-1)">&#10094;</button>
+            <button class="next" onclick="moverTarjeta(1)">&#10095;</button>
+        </div>
+        <br>
+    </div>
+
+    
+    <script>
+        let index = 0;
+        function moverTarjeta(step) {
+            const tarjetas = document.querySelectorAll('.tarjeta');
+            index = (index + step + tarjetas.length) % tarjetas.length;
+            document.querySelector('.tarjetas-div').style.transform = `translateX(${-index * 100}%)`;
+        }
+    </script>
+</body>
+</html>
 

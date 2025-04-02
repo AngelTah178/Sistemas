@@ -1,1 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+/*Mis navbar*/
 
+
+html {
+    background-color: black;
+}
+h1 {
+   font-family: "Pixelify Sans";
+    color: aliceblue;
+    text-align: center;  
+    margin-bottom: 0;
+     
+}
+
+
+ul {
+
+  list-style-type: none;
+  overflow: hidden;
+  background-color: #ff1e1e;  
+  width: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+ 
+}
+
+a{
+    size: 40px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    font-family: "Pixelify Sans";
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin-top: 0;
+    
+}
+
+.a {
+ padding-bottom: 19px;  
+ padding-top:18px; 
+}
+
+li a:hover {
+    background-color: #ffffff;
+    color: #791313;
+    text-decoration: solid;
+    cursor: pointer;
+}
+
+
+/*Fin del navbar*/
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; /* Cambiado de center a start para permitir scroll */
+    min-height: 100vh; /* En lugar de height: 100vh */
+    
+}
+
+
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start; /* Asegura que el contenido fluya */
+    width: 100%;
+    max-width: 800px;
+    margin-top: 20px; /* Agregado para separar del navbar */
+}
+
+
+
+
+.carrusel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    
+}
+
+.tarjetas-div {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 5px;
+    min-width: 40%;
+    
+    
+}
+
+.tarjeta {
+    padding-top: 10px;
+    min-width: 100%;
+    text-align: center;
+    background-color: #ff1e1e;     
+    border-radius: 5px;
+    height: 75%;
+    font-family: "Pixelify Sans";
+    color: #ffffff;
+
+}
+
+.nombre{
+
+    color: #ffffff;
+    font-family: "Pixelify Sans";
+}
+
+img {
+    padding: 0;
+    padding: 0;
+    height: 250px;
+    
+    border-radius: 5px;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    
+}
+
+button:hover{
+background-color: black;
+}
+
+.prev { left: 10px; }
+.next { right: 10px; }
+
+.datos {
+    font-family: "Pixelify Sans";
+    background: white;
+    padding: 25px;
+    padding-top:0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.datosTitulo{
+    font-size: xx-large;
+}
