@@ -1,0 +1,91 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap');
+/*Mis navbar*/
+
+
+html {
+    background-color: black;
+}
+h1 {
+   font-family: "Pixelify Sans";
+    color: aliceblue;
+    text-align: center;
+    
+}
+
+ul {
+    list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ff1e1e;  
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    font-family: "Pixelify Sans";
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #791313;
+}
+/*Fin del navbar*/
+
+/*AQUÍ EMPIEZA LA PÁGINA DE BORRACHOS.NET*/
+p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: "Pixelify Sans";
+}
+
+.desc {
+    color: white;
+    font-family: "Pixelify Sans";
+    text-align: center;
+
+}
+
+/*PARA LAS CARDS*/
+
+img {
+    height: 350px;
+}
+
+.gallery-container {
+display: flex;
+flex-wrap: wrap;
+gap: 40px;
+justify-content: center;
+align-items: center;
+}
+
+.gallery {
+    text-align: center;
+}
+
+.myButton {
+    text-align: center;
+    background-color: #ff1e1e;
+    width: 150px;
+    height: 40px;
+    color: white;
+    font-family: "Pixelify Sans";
+    font-size: 20px;
+    border: black;
+    border-radius: 7px;
+    
+    
+}
+
+.myButton:hover{
+    background-color: #791313;
+}
